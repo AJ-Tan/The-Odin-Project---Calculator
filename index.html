@@ -3,9 +3,59 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <script type="module" src="index.js"></script>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <section class="calculator">
+        <header>
+          <div class="calc-display">
+            <span class="calc-history"></span>
+            <input type="number" name="calc-input" id="calc-input" autofocus />
+          </div>
+        </header>
+        <div class="calc-buttons">
+          <div>
+            <button class="danger" data-input="cancel" type="button">C</button>
+            <button class="accent" data-input="mod" type="button">mod</button>
+            <button class="accent" data-input="pow" type="button">
+              x<sup>2</sup>
+            </button>
+            <button class="accent" data-input="/" type="button">÷</button>
+          </div>
+          <div>
+            <button data-input="7" type="button">7</button>
+            <button data-input="8" type="button">8</button>
+            <button data-input="9" type="button">9</button>
+            <button class="accent" data-input="*" type="button">X</button>
+          </div>
+          <div>
+            <button data-input="4" type="button">4</button>
+            <button data-input="5" type="button">5</button>
+            <button data-input="6" type="button">6</button>
+            <button class="accent" data-input="-" type="button">-</button>
+          </div>
+          <div>
+            <button data-input="1" type="button">1</button>
+            <button data-input="2" type="button">2</button>
+            <button data-input="3" type="button">3</button>
+            <button class="accent" data-input="+" type="button">+</button>
+          </div>
+          <div>
+            <button class="flex-2" data-input="0" type="button">0</button>
+            <button data-input="." type="button">.</button>
+            <button class="accent" data-input="=" type="button">=</button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
