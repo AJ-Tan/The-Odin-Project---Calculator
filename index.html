@@ -18,18 +18,22 @@
       <section class="calculator">
         <header>
           <div class="calc-display">
-            <span class="calc-history"></span>
-            <input type="number" name="calc-input" id="calc-input" autofocus />
+            <span id="calc-history"></span>
+            <input
+              type="text"
+              name="calc-input"
+              id="calc-input"
+              autocomplete="off"
+              autofocus
+            />
           </div>
         </header>
         <div class="calc-buttons">
           <div>
             <button class="danger" data-input="cancel" type="button">C</button>
             <button class="accent" data-input="mod" type="button">mod</button>
-            <button class="accent" data-input="pow" type="button">
-              x<sup>2</sup>
-            </button>
-            <button class="accent" data-input="/" type="button">÷</button>
+            <button class="accent" data-input="**" type="button">**</button>
+            <button class="accent" data-input="÷" type="button">÷</button>
           </div>
           <div>
             <button data-input="7" type="button">7</button>
@@ -52,7 +56,9 @@
           <div>
             <button class="flex-2" data-input="0" type="button">0</button>
             <button data-input="." type="button">.</button>
-            <button class="accent" data-input="=" type="button">=</button>
+            <button id="btn-calc" class="accent" data-input="=" type="button">
+              =
+            </button>
           </div>
         </div>
       </section>
